@@ -118,7 +118,7 @@ class Command(object):
         command, as a tuple of integers.
 
         """
-        return self._data
+        return (0x02, 0x00) + self._data
 
     @property
     def is_config(self):
